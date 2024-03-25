@@ -183,6 +183,8 @@ FROM
      ON assignments.user_id = orders.user_id
    GROUP BY assignments.user_id,
             assignments.test_id,
+
+
             assignments.test_assignment) mean_metrics
 GROUP BY test_id,
          test_assignment
